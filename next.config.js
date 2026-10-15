@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const basePath = process.env.NODE_ENV === 'production' ? '/dip-decision' : '';
+
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
@@ -6,8 +8,7 @@ const nextConfig = {
     unoptimized: true
   },
   // Configure for GitHub Pages deployment
-  basePath: process.env.NODE_ENV === 'production' ? '/dip-decision' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/dip-decision/' : '',
+  basePath,
 }
 
 module.exports = nextConfig
