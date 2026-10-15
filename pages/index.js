@@ -4,11 +4,19 @@ import wave from '../public/images/wave.svg';
 
 export default function Home() {
   return (
-    <div className="container">
-      <Image src={wave} alt="" priority />
-      <p className="title">a living calendar of the lake</p>
-      <p>↓</p>
-      <Calendar />
-    </div>
+    <main>
+      <section className="start-section">
+        <Image src={wave} alt="" priority />
+        <p className="title">
+          a living calendar of the lake
+          <br />
+          <a className="arrow" href="#calendar">↓</a>
+        </p>
+      </section>
+
+      <section id="calendar" className="calendar-section">
+        <Calendar />
+      </section>
+    </main>
   );
 }

@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const basePath = process.env.NODE_ENV === 'production' ? '/dip-decision' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '/live-lake-cal' : '';
 
 const nextConfig = {
   output: 'export',
