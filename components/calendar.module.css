@@ -1,0 +1,23 @@
+.calendar {
+  --rdp-accent-color: #1b4965;
+  --rdp-accent-background-color: #eaf5ff;
+  --rdp-day-width: 64px;
+  --rdp-day-height: 64px;
+  --rdp-day_button-width: 60px;
+  --rdp-day_button-height: 60px;
+  --rdp-nav_button-width: 3rem;
+  --rdp-nav_button-height: 3rem;
+  --rdp-nav-height: 3.5rem;
+  font-size: 1.25rem;
+}
+
+.calendar :global(.rdp-month_grid) {
+  border-collapse: separate;
+  border-spacing: 6px;
+}
+
+.calendar :global(.rdp-day_button) {
+  background-color: #fff;
+  color: #1b4965;
+  border-radius: 6px;
+}
