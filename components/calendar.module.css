@@ -1,23 +1,16 @@
-.calendar {
-  --rdp-accent-color: #1b4965;
-  --rdp-accent-background-color: #eaf5ff;
-  --rdp-day-width: 64px;
-  --rdp-day-height: 64px;
-  --rdp-day_button-width: 60px;
-  --rdp-day_button-height: 60px;
-  --rdp-nav_button-width: 3rem;
-  --rdp-nav_button-height: 3rem;
-  --rdp-nav-height: 3.5rem;
-  font-size: 1.25rem;
+/* 7 columns = 7 days of the week, so weeks stack downward */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 48px);
+  gap: 6px;
 }
 
-.calendar :global(.rdp-month_grid) {
-  border-collapse: separate;
-  border-spacing: 6px;
-}
-
-.calendar :global(.rdp-day_button) {
-  background-color: #fff;
-  color: #1b4965;
+.cell {
+  height: 48px;
   border-radius: 6px;
+  background: #fff;
+}
+
+.today {
+  border: 3px solid #1b4965;
 }
