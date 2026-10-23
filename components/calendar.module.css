@@ -1,16 +1,14 @@
 /* 7 columns = 7 days of the week, so weeks stack downward */
 .grid {
   display: grid;
-  grid-template-columns: repeat(7, 48px);
+  grid-template-columns: repeat(7, 1fr);
   gap: 6px;
+  width: 100%;
+  max-width: 372px;
 }
 
 .cell {
-  height: 48px;
+  aspect-ratio: 1;
   border-radius: 6px;
   background: #fff;
-}
-
-.today {
-  border: 3px solid #1b4965;
 }

@@ -8,7 +8,8 @@ export default function Home() {
       <section className="start-section">
         <Image src={wave} alt="" priority />
         <p className="title">
-          a living calendar of the lake
+          a living calendar of Lake Michigan <br/><br/><br/><br/>
+          📍 Chicago
           <br />
           <a className="arrow" href="#calendar">↓</a>
         </p>
